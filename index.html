@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MasterCraft — Реставрация и Сервис</title>
+    <title>Мастерская ОХУН — Реставрация и Сервис</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -40,7 +40,7 @@
     <!-- Навигация -->
     <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-white/10">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-tighter uppercase">Master<span class="text-amber-500">Craft</span></div>
+            <div class="text-2xl font-bold tracking-tighter uppercase italic">Master<span class="text-amber-500">Craft</span></div>
             <button onclick="window.location.href='https://wa.me/996779938246'" class="bg-green-600 hover:bg-green-500 text-white px-5 py-2 rounded-full font-bold text-xs transition uppercase">Написать в WhatsApp</button>
         </div>
     </nav>
@@ -52,13 +52,13 @@
             <img src="https://images.unsplash.com/photo-1590739225287-bd26514ca929?auto=format&fit=crop&q=80&w=1920" class="w-full h-full object-cover opacity-60" alt="Инструменты мастера">
         </div>
         <div class="relative z-20 text-center px-4 animate__animated animate__fadeInUp">
-            <span class="text-amber-500 font-bold tracking-widest uppercase text-sm mb-4 block">Премиальный сервис реставрации</span>
-            <h1 class="text-4xl md:text-7xl mb-6">Мастерская <span class="gradient-text text-white">OХУН</span></h1>
+            <span class="text-amber-500 font-bold tracking-widest uppercase text-sm mb-4 block text-white">Премиальный сервис реставрации</span>
+            <h1 class="text-5xl md:text-8xl mb-6 font-bold uppercase tracking-tight">Мастерская <span class="gradient-text">ОХУН</span></h1>
             <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-                Замена батареек, заточка ножей, продажа стелек и полная реставрация ваших любимых вещей.
+                Замена батареек, профессиональная заточка, продажа стелек и полная реставрация ваших вещей с гарантией качества.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://wa.me/79001234567" class="btn-hover bg-amber-500 text-slate-900 px-10 py-4 rounded-2xl font-bold text-lg transition duration-300">Записаться на ремонт</a>
+                <a href="https://wa.me/996779938246" class="btn-hover bg-amber-500 text-slate-900 px-10 py-4 rounded-2xl font-bold text-lg transition duration-300">Записаться на ремонт</a>
                 <a href="#portfolio" class="btn-hover border border-white/20 hover:bg-white/5 px-10 py-4 rounded-2xl font-bold text-lg transition duration-300">Мои работы</a>
             </div>
         </div>
@@ -66,46 +66,76 @@
 
     <!-- Секция Услуг -->
     <section id="services" class="py-24 px-6 bg-slate-900">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center sm:text-left">
             <div class="reveal p-8 bg-slate-800 rounded-3xl border border-white/5 hover:border-amber-500/50 transition">
-                <h3 class="text-2xl font-bold mb-4">👟 Обувь и Стельки</h3>
-                <p class="text-slate-400">Полный уход, химчистка и подбор профессиональных стелек для комфортной ходьбы.</p>
+                <div class="text-4xl mb-4">👞</div>
+                <h3 class="text-2xl font-bold mb-4">Обувь и Стельки</h3>
+                <p class="text-slate-400">Химчистка, восстановление цвета и подбор профессиональных стелек для любой обуви.</p>
             </div>
             <div class="reveal p-8 bg-slate-800 rounded-3xl border border-white/5 hover:border-amber-500/50 transition">
-                <h3 class="text-2xl font-bold mb-4">⌚ Часовой сервис</h3>
-                <p class="text-slate-400">Замена батареек в часах любых марок. Используем только качественные элементы питания.</p>
+                <div class="text-4xl mb-4">⌚</div>
+                <h3 class="text-2xl font-bold mb-4">Часовой сервис</h3>
+                <p class="text-slate-400">Быстрая и качественная замена батареек. Элементы питания от лучших мировых производителей.</p>
             </div>
             <div class="reveal p-8 bg-slate-800 rounded-3xl border border-white/5 hover:border-amber-500/50 transition">
-                <h3 class="text-2xl font-bold mb-4">🔪 Заточка</h3>
-                <p class="text-slate-400">Идеальная острота ваших ножей и ножниц. Профессиональное оборудование.</p>
+                <div class="text-4xl mb-4">🔪</div>
+                <h3 class="text-2xl font-bold mb-4">Заточка</h3>
+                <p class="text-slate-400">Профессиональная заточка кухонных, охотничьих ножей и парикмахерских ножниц.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Кейсы / Отзывы -->
+    <section id="cases" class="py-24 bg-black/50 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-amber-500 uppercase tracking-widest">Результаты работы</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Кейс 1 -->
+                <div class="reveal bg-slate-800 p-8 rounded-3xl border-l-4 border-amber-500">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-amber-500 font-bold uppercase text-xs">Оценка обучения: 99 / 100</span>
+                        <div class="text-yellow-400">★★★★★</div>
+                    </div>
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">"Прошел обучение у мастера ОХУНА. Каждая деталь объясняется до мельчайших подробностей. Мой первый результат по заточке оценили на высший балл!"</p>
+                    <div class="font-bold">— Артем, выпускник курса</div>
+                </div>
+                <!-- Кейс 2 -->
+                <div class="reveal bg-slate-800 p-8 rounded-3xl border-l-4 border-green-500">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-green-500 font-bold uppercase text-xs">Комплексная услуга</span>
+                        <div class="text-yellow-400">★★★★★</div>
+                    </div>
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">"Принес обувь на чистку и заодно купил стельки. Совершенно другие ощущения при ходьбе! Работа мастера безупречна."</p>
+                    <div class="font-bold">— Икрам, постоянный клиент</div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Опыт и Портфолио -->
-    <section id="portfolio" class="py-24 bg-black">
-        <div class="max-w-7xl mx-auto px-6">
+    <section id="portfolio" class="py-24 bg-black px-6">
+        <div class="max-w-7xl mx-auto">
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="w-full md:w-1/2 reveal">
-                    <h2 class="text-4xl font-bold mb-6 italic text-amber-500">Портфолио и опыт</h2>
-                    <p class="text-slate-300 text-lg mb-6">Более 15 лет я занимаюсь делом, которое люблю. Каждое изделие проходит через мои руки.</p>
+                    <h2 class="text-4xl font-bold mb-6 italic text-amber-500">Многолетний опыт</h2>
+                    <p class="text-slate-300 text-lg mb-6 leading-relaxed">Более 15 лет в индустрии сервиса. Каждая работа для меня — это вопрос репутации. Я не просто чиню вещи, я возвращаю им функциональность и эстетику.</p>
                     <div class="space-y-4">
                         <div class="flex items-center gap-4 bg-slate-900 p-4 rounded-xl">
                             <span class="text-3xl">🏆</span>
-                            <p class="font-bold">Сертифицированный мастер реставрации</p>
+                            <p class="font-bold uppercase text-xs tracking-widest">Гарантия на все виды работ</p>
                         </div>
                         <div class="flex items-center gap-4 bg-slate-900 p-4 rounded-xl">
-                            <span class="text-3xl">👨‍🎓</span>
-                            <p class="font-bold">Обучил более 120 мастеров</p>
+                            <span class="text-3xl">👨‍🏫</span>
+                            <p class="font-bold uppercase text-xs tracking-widest">Более 120 обученных специалистов</p>
                         </div>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 grid grid-cols-2 gap-4 reveal">
-                    <div class="h-64 bg-slate-800 rounded-2xl overflow-hidden">
-                         <img src="https://images.unsplash.com/photo-1590739225287-bd26514ca929?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover" alt="Пример работы 1">
+                    <div class="h-64 bg-slate-800 rounded-2xl overflow-hidden shadow-2xl">
+                         <img src="https://images.unsplash.com/photo-1590739225287-bd26514ca929?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500" alt="Пример 1">
                     </div>
-                    <div class="h-64 bg-slate-800 rounded-2xl overflow-hidden mt-8">
-                         <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover" alt="Пример работы 2">
+                    <div class="h-64 bg-slate-800 rounded-2xl overflow-hidden mt-8 shadow-2xl">
+                         <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500" alt="Пример 2">
                     </div>
                 </div>
             </div>
@@ -114,7 +144,12 @@
 
     <!-- Футер -->
     <footer class="py-12 bg-slate-900 border-t border-white/10 text-center">
-        <p class="text-slate-500">&copy; 2024 MasterCraft. Все права защищены.</p>
+        <div class="text-2xl font-bold tracking-tighter uppercase mb-4">Master<span class="text-amber-500">Craft</span></div>
+        <p class="text-slate-500 text-sm mb-6">&copy; 2024 Мастерская ОХУН. Все права защищены.</p>
+        <div class="flex justify-center gap-6">
+            <a href="https://wa.me/996779938246" class="text-green-500 font-bold hover:underline">WhatsApp</a>
+            <p class="text-slate-300 font-bold">+996 (779) 93-82-46</p>
+        </div>
     </footer>
 
     <script>
