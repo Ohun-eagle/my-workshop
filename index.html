@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterCraft — Реставрация и Сервис</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .gradient-text {
+            background: linear-gradient(90deg, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter uppercase">Master<span class="text-amber-500">Craft</span></div>
+            <button onclick="window.location.href='https://wa.me/79001234567'" class="bg-green-600 hover:bg-green-500 text-white px-5 py-2 rounded-full font-bold text-xs transition uppercase">Написать в WhatsApp</button>
+        </div>
+    </nav>
+
+    <!-- Главный экран -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-black">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-slate-900 z-10"></div>
+            <img src="https://images.unsplash.com/photo-1590739225287-bd26514ca929?auto=format&fit=crop&q=80&w=1920" class="w-full h-full object-cover opacity-60" alt="Инструменты мастера">
+        </div>
+        <div class="relative z-20 text-center px-4 animate__animated animate__fadeInUp">
+            <span class="text-amber-500 font-bold tracking-widest uppercase text-sm mb-4 block">Премиальный сервис реставрации</span>
+            <h1 class="text-4xl md:text-7xl mb-6">Мастерская <span class="gradient-text text-white">Александра</span></h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Замена батареек, заточка ножей, продажа стелек и полная реставрация ваших любимых вещей.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/79001234567" class="btn-hover bg-amber-500 text-slate-900 px-10 py-4 rounded-2xl font-bold text-lg transition duration-300">Записаться на ремонт</a>
+                <a href="#portfolio" class="btn-hover border border-white/20 hover:bg-white/5 px-10 py-4 rounded-2xl font-bold text-lg transition duration-300">Мои работы</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Услуг -->
+    <section id="services" class="py-24 px-6 bg-slate-900">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="reveal p-8 bg-slate-800 rounded-3xl border border-white/5 hover:border-amber-500/50 transition">
+                <h3 class="text-2xl font-bold mb-4">👟 Обувь и Стельки</h3>
+                <p class="text-slate-400">Полный уход, химчистка и подбор профессиональных стелек для комфортной ходьбы.</p>
+            </div>
+            <div class="reveal p-8 bg-slate-800 rounded-3xl border border-white/5 hover:border-amber-500/50 transition">
+                <h3 class="text-2xl font-bold mb-4">⌚ Часовой сервис</h3>
+                <p class="text-slate-400">Замена батареек в часах любых марок. Используем только качественные элементы питания.</p>
+            </div>
+            <div class="reveal p-8 bg-slate-800 rounded-3xl border border-white/5 hover:border-amber-500/50 transition">
+                <h3 class="text-2xl font-bold mb-4">🔪 Заточка</h3>
+                <p class="text-slate-400">Идеальная острота ваших ножей и ножниц. Профессиональное оборудование.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Опыт и Портфолио -->
+    <section id="portfolio" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2 reveal">
+                    <h2 class="text-4xl font-bold mb-6 italic text-amber-500">Портфолио и опыт</h2>
+                    <p class="text-slate-300 text-lg mb-6">Более 15 лет я занимаюсь делом, которое люблю. Каждое изделие проходит через мои руки.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 bg-slate-900 p-4 rounded-xl">
+                            <span class="text-3xl">🏆</span>
+                            <p class="font-bold">Сертифицированный мастер реставрации</p>
+                        </div>
+                        <div class="flex items-center gap-4 bg-slate-900 p-4 rounded-xl">
+                            <span class="text-3xl">👨‍🎓</span>
+                            <p class="font-bold">Обучил более 120 мастеров</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 grid grid-cols-2 gap-4 reveal">
+                    <div class="h-64 bg-slate-800 rounded-2xl overflow-hidden">
+                         <img src="https://images.unsplash.com/photo-1590739225287-bd26514ca929?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover" alt="Пример работы 1">
+                    </div>
+                    <div class="h-64 bg-slate-800 rounded-2xl overflow-hidden mt-8">
+                         <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover" alt="Пример работы 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="py-12 bg-slate-900 border-t border-white/10 text-center">
+        <p class="text-slate-500">&copy; 2024 MasterCraft. Все права защищены.</p>
+    </footer>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                if (elementTop < windowHeight - 100) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        window.onload = reveal;
+    </script>
+</body>
+</html>
+
